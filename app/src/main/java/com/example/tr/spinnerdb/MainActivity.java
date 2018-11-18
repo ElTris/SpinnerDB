@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
     public ArrayList<String> obteneralv(){
         ArrayList<String> datosbd = new ArrayList<>();
         try{
+            String x;
             Statement st= conexionBD().createStatement();
             ResultSet rs=st.executeQuery("select Cve_municipios,nombre from Municipios");
             while (rs.next()){
